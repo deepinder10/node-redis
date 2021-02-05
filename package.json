@@ -1,0 +1,30 @@
+{
+  "name": "node-redis",
+  "version": "1.0.0",
+  "description": "Beginner's guide to Redis with NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepinder10/node-redis.git"
+  },
+  "keywords": [
+    "Redis",
+    "NodeJS",
+    "Beginner",
+    "Commands"
+  ],
+  "author": "Deepinder Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deepinder10/node-redis/issues"
+  },
+  "homepage": "https://github.com/deepinder10/node-redis#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "ioredis": "^4.20.0"
+  }
+}
