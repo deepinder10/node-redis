@@ -20,13 +20,19 @@ callStringCommands();
 // STRINGs functions
 async function callStringCommands() {
 	// we set a key with name foo and value bar, set also returns a promise
-	redis.set("foo", "bar");
-	// we fetch the key and it returns a promise.
-	const result = await redis.get("foo");
-	console.log(result);
-	// we delete the key in redis
-	redis.del("foo");
-	// we fetch the deleted key which returns in null
-	const latest = await redis.get("foo");
-	console.log(latest);
+	redis.setex("foo", 10, "bar");
+	// redis.set("foo", "bar");
+
+	// const res = await redis.set("foo", "bar");
+	// console.log(res);
+
+	// // we fetch the key and it returns a promise.
+	// const result = await redis.get("foo");
+	// console.log(result);
+	// // we delete the key in redis
+	// const deleteResult = await redis.del("fo1o");
+	// console.log(deleteResult);
+	// // we fetch the deleted key which returns in null
+	// const latest = await redis.get("foo");
+	// console.log(latest);
 }
