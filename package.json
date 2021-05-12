@@ -25,6 +25,6 @@
   "homepage": "https://github.com/deepinder10/node-redis#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "ioredis": "^4.20.0"
+    "ioredis": "^4.27.2"
   }
 }
